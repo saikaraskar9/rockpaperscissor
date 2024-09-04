@@ -21,14 +21,16 @@ function playround(humanchoice, computerchoice) {
     }
     else if(
         (humanchoice === "rock" && computerchoice === "scissors") ||
-        (humanchoice === "paper" && computerchoice === "rock")
+        (humanchoice === "paper" && computerchoice === "rock") ||
         (humanchoice === "scissors" && computerchoice === "paper")
     ){
-        console.log("You win!")
+        console.log("You win!");
+        humanscore++;
     }
     else{
-        console.log("You Lose!")
+        console.log("You Lose!");
+        computerscore++;
     }
+    console.log("Human score :"+" "+humanscore, "  "+"Computer score :"+" "+ computerscore)
 }
-
 playround(humanchoice(), computerchoice())
