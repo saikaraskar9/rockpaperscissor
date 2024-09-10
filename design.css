@@ -1,0 +1,19 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main{
+    border: 5px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height:400px;
+    width: 400px;
+}
+
+.select{
+    padding: 40px;
+}
